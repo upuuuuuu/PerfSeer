@@ -9,7 +9,7 @@ This dataset spans various styles of network architectures, including GoogLeNet,
 Download and unpack our dataset from the [public google drive folder](https://drive.google.com/drive/folders/15anTR-bBTTfvXx9aQXp1BlMcqXjJsmmW?usp=sharing)
 
 ## Using the dataset
-Example usage(see util_dataset/example.py for a full runnable example)
+Example usage(see [example.py](util_dataset/example.py) for a full runnable example)
 - parse graph
 ```python
 import networkx as nx
