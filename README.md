@@ -56,7 +56,7 @@ with open(label_path, "r") as f:
     # get metric label
     (
         time,
-        peak_sm_util,
+        average_sm_util,
         average_memory_util,
         average_memory_usuage,
         peak_sm_util,
