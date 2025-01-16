@@ -1,4 +1,4 @@
-# A Generalized and Accurate Deep Learning Models Performance Predictor towards Cluster Schedulers
+# An Efficient and Accurate Deep Learning Models Performance Predictor.
 ## Overview
 GAPP enables accurate, convenient, and rapid predictions of various performance metrics for various types of DL jobs, addressing the limitations of existing performance predictor in terms of generality and accuracy.  
 
