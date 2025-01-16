@@ -2,7 +2,7 @@
 ## Overview
 GAPP enables accurate, convenient, and rapid predictions of various performance metrics for various types of DL jobs, addressing the limitations of existing performance predictor in terms of generality and accuracy.  
 
-We open sourced the performance metrics dataset used by GAPP.  
+We open sourced the performance metrics dataset used by SeerPerf.  
 This dataset spans various styles of network architectures, including GoogLeNet, VGG, ResNe(X)t, MobileNet, and DenseNet, covering a wide range of floating point operations (FLOPs) from 49M to 22T. Additionally, we collect the execution time, GPU memory usage, and GPU Streaming Multiprocessor (SM) utilization for these model configurations during both the training and inference phases on the Nvidia GeForce RTX 3090.
 
 ## Download the dataset 
