@@ -1,6 +1,6 @@
 # PerfSeer: An Efficient and Accurate Deep Learning Models Performance Predictor.
 ## Overview
-GAPP enables accurate, convenient, and rapid predictions of various performance metrics for various types of DL jobs, addressing the limitations of existing performance predictor in terms of generality and accuracy.  
+PerfSeer enables efficient and accurate prediction of various performance metrics for DL models during both training and inference.
 
 We open sourced the performance metrics dataset used by SeerPerf.  
 This dataset spans various styles of network architectures, including GoogLeNet, VGG, ResNe(X)t, MobileNet, and DenseNet, covering a wide range of floating point operations (FLOPs) from 49M to 22T. Additionally, we collect the execution time, GPU memory usage, and GPU Streaming Multiprocessor (SM) utilization for these model configurations during both the training and inference phases on the Nvidia GeForce RTX 3090.
