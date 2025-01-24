@@ -10,9 +10,10 @@ We construct a dataset containing 53k+ model configurations with their various p
 
 ### Model Configurations
 The CNNs are classic, widely used, and exhibit diverse architectural styles. Therefore, we demonstrate the capability of our predictor by predicting CNN models. We improve upon the NAS method (RegNet) to generate models with various architectures and computational complexities. The general architecture of models in the performance metrics dataset is depicted in the figure below.
-<figure style="text-align: center;">
-  <img src="./general_model.jpg" alt="General architecture" width="600"/>
-</figure>
+<div style="text-align: center;">
+  <img src="./general_model.jpg" alt="General Model" width="600"/>
+</div>
+
 
 Each model is composed of a stem, body, and head. The stem is a convolutional block comprising a convolution layer, a batch normalization layer, and an activation function. The convolution operation uses a 3×3 kernel, a stride of 2, and produces an output channel of 32. The head consists of a global average pooling layer followed by a fully connected layer.
 
@@ -43,10 +44,6 @@ In total, we collected multiple performance metrics for 53k+ model configuration
 | **Min**    | 0.05      | 0.01         | 0.04       | 5.0               | 1,500                 | 2.9                | 8.0                 | 1,410                  | 0.8                 |
 | **Median** | 40.8      | 2.1          | 3.6        | 66.9              | 2,728                 | 44.1               | 97.0                | 1,790                  | 9.2                 |
 | **Max**    | 22,543.9  | 70.2         | 254.9      | 99.0              | 24,244                | 1,919.5            | 99.0                | 19,462                 | 554.5               |
-
-
-
-
 
 ## Download the dataset 
 Download and unpack our dataset from the [public google drive folder](https://drive.google.com/drive/folders/15anTR-bBTTfvXx9aQXp1BlMcqXjJsmmW?usp=sharing)
