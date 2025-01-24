@@ -43,10 +43,10 @@ In total, we collected multiple performance metrics for 53k+ model configuration
 | **Median** | 40.8      | 2.1          | 3.6        | 66.9              | 2,728                 | 44.1               | 97.0                | 1,790                  | 9.2                 |
 | **Max**    | 22,543.9  | 70.2         | 254.9      | 99.0              | 24,244                | 1,919.5            | 99.0                | 19,462                 | 554.5               |
 
-## Download the dataset 
+## Dataset Download  
 Download and unpack our dataset from the [public google drive folder](https://drive.google.com/drive/folders/15anTR-bBTTfvXx9aQXp1BlMcqXjJsmmW?usp=sharing)
 
-## Using the dataset
+## Dataset Usuage  
 Example usage(see [example.py](util_dataset/example.py) for a full runnable example)
 - parse graph
 ```python
