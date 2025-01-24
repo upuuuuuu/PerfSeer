@@ -2,16 +2,13 @@
 ## Overview
 PerfSeer enables efficient and accurate prediction of various performance metrics for DL models during both training and inference.
 
-We open sourced the performance metrics dataset used by SeerPerf.  
+We open-sourced the performance metrics dataset used by SeerPerf.  
 This dataset spans various styles of network architectures, including GoogLeNet, VGG, ResNe(X)t, MobileNet, and DenseNet, covering a wide range of floating point operations (FLOPs) from 49M to 22T. Additionally, we collect the execution time, GPU memory usage, and GPU Streaming Multiprocessor (SM) utilization for these model configurations during both the training and inference phases on the Nvidia GeForce RTX 3090.
 
 ## Dataset Profile
-
-
-We construct a dataset containing 53k+ model configurations (Section [Model Configurations](#general-model)) with their various performance metrics (Section [Performance Metrics Collection](#metrics-collection)) to train and evaluate the prediction models of PerfSeer.
+We construct a dataset containing 53k+ model configurations with their various performance metrics to train and evaluate the prediction models of PerfSeer.
 
 ### Model Configurations
-
 The CNNs are classic, widely used, and exhibit diverse architectural styles. Therefore, we demonstrate the capability of our predictor by predicting CNN models. We improve upon the NAS method (RegNet) to generate models with various architectures and computational complexities. The general architecture of models in the performance metrics dataset is depicted in Figure [General Model](#general-model). 
 
 Each model is composed of a stem, body, and head. The stem is a convolutional block comprising a convolution layer, a batch normalization layer, and an activation function. The convolution operation uses a 3×3 kernel, a stride of 2, and produces an output channel of 32. The head consists of a global average pooling layer followed by a fully connected layer.
@@ -35,9 +32,8 @@ For input tensors of size `3 x 224 x 224`, we set the batch sizes to 1, 2, 4, 8,
 
 During the metrics collection process, we initiated a 30-second warm-up for models to reach optimal performance for training or inference. Following this, we collected metrics for another 30 seconds. We calculated the execution time per training or inference iteration by recording the number of iterations completed during this period. Additionally, we utilized [pynvml](https://pypi.org/project/pynvml) to obtain the average SM utilization and maximum memory usage.
 
-In total, we collected multiple performance metrics for 53k+ model configurations (batch sizes and network architectures) during both training and inference. Some network architectures had large parameter sizes, causing Out-of-Memory errors with larger batch sizes, which led to incomplete metrics collection. As shown in Table [Dataset Profile](#datesets-profile), our proposed dataset covers a wide range of model configuration variants, encompassing various FLOPs, MAC, parameter sizes, execution time, memory usage, and SM utilization.
+In total, we collected multiple performance metrics for 53k+ model configurations (batch sizes and network architectures) during both training and inference. Some network architectures had large parameter sizes, causing Out-of-Memory errors with larger batch sizes, which led to incomplete metrics collection. As shown in the table below, our proposed dataset covers a wide range of model configuration variants, encompassing various FLOPs, MAC, parameter sizes, execution time, memory usage, and SM utilization.
 
-### Dataset Profile {#datesets-profile}
 | Statistics | FLOPs (G) | MAC (GBytes) | Params (M) | Training Util (%) | Training Mem (MBytes) | Training Time (ms) | Inference Util (%) | Inference Mem (MBytes) | Inference Time (ms) |
 |------------|-----------|--------------|------------|-------------------|-----------------------|--------------------|---------------------|------------------------|---------------------|
 | **Mean**   | 214.8     | 7.7          | 9.5        | 62.4              | 5,255                 | 87.1               | 72.9                | 2,412                  | 23.8                |
