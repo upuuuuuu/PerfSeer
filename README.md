@@ -44,7 +44,8 @@ In total, we collected multiple performance metrics for 53k+ model configuration
 | **Max**    | 22,543.9  | 70.2         | 254.9      | 99.0              | 24,244                | 1,919.5            | 99.0                | 19,462                 | 554.5               |
 
 ## Dataset Download  
-Download and unpack our dataset from the [public google drive folder](https://drive.google.com/drive/folders/15anTR-bBTTfvXx9aQXp1BlMcqXjJsmmW?usp=sharing)
+Download and unpack our dataset from the 
+<!-- [public google drive folder](https://drive.google.com/drive/folders/15anTR-bBTTfvXx9aQXp1BlMcqXjJsmmW?usp=sharing) -->
 
 ## Dataset Usuage  
 Example usage(see [example.py](util_dataset/example.py) for a full runnable example)
