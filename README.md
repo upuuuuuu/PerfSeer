@@ -44,7 +44,7 @@ In total, we collected multiple performance metrics for 53k+ model configuration
 | **Max**    | 22,543.9  | 70.2         | 254.9      | 99.0              | 24,244                | 1,919.5            | 99.0                | 19,462                 | 554.5               |
 
 ## Dataset Download  
-Download and unpack our dataset from the [public google drive folder (Due to personal information contained in the links, they are temporarily concealed during the paper submission.)](https://drive.google.com)
+Download and unpack our dataset from the [public google drive folder](https://drive.google.com/drive/folders/1T7DNKUyjIdnLIMTL4IZA67ynvhA75Pdt?usp=drive_link)
 <!-- [public google drive folder](https://drive.google.com/drive/folders/15anTR-bBTTfvXx9aQXp1BlMcqXjJsmmW?usp=sharing) -->
 
 ## Dataset Usuage  
