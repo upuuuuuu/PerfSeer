@@ -49,7 +49,7 @@ Download and unpack our dataset from the [public google drive folder](https://dr
 
 ## 💻 4. Dataset Usuage  
 Example usage(see [example.py](util_dataset/example.py) for a full runnable example)
-- **parse graph**
+### 🧠 4.1 parse graph
 ```python
 import networkx as nx
 import pickle
@@ -85,7 +85,7 @@ for node_idx in compute_graph.nodes():
 # you can derive the connectivity between all nodes in the entire graph.
 edges = compute_graph.edges()
 ```
-- **parse label** 
+### 🏷️ 4.2 parse label
 ```python
 label_path = "test.txt"
 with open(label_path, "r") as f:
