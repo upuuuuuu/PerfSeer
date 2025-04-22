@@ -43,13 +43,13 @@ In total, we collected multiple performance metrics for 53k+ model configuration
 | **Median** | 40.8      | 2.1          | 3.6        | 66.9              | 2,728                 | 44.1               | 97.0                | 1,790                  | 9.2                 |
 | **Max**    | 22,543.9  | 70.2         | 254.9      | 99.0              | 24,244                | 1,919.5            | 99.0                | 19,462                 | 554.5               |
 
-## 📥 3. Dataset Download  
+## 📁 3. Dataset Download  
 Download and unpack our dataset from the [public google drive folder](https://drive.google.com/drive/folders/1T7DNKUyjIdnLIMTL4IZA67ynvhA75Pdt?usp=drive_link)
 <!-- [public google drive folder](https://drive.google.com/drive/folders/15anTR-bBTTfvXx9aQXp1BlMcqXjJsmmW?usp=sharing) -->
 
-## 💻 4. Dataset Usuage  
+## 💻 4. Dataset Usage
 Example usage(see [example.py](util_dataset/example.py) for a full runnable example)
-### 🧠 4.1 parse graph
+### 🧠 4.1 Parse Graph
 ```python
 import networkx as nx
 import pickle
@@ -85,7 +85,7 @@ for node_idx in compute_graph.nodes():
 # you can derive the connectivity between all nodes in the entire graph.
 edges = compute_graph.edges()
 ```
-### 🏷️ 4.2 parse label
+### 🏷️ 4.2 Parse Label
 ```python
 label_path = "test.txt"
 with open(label_path, "r") as f:
