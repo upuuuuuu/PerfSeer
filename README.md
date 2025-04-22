@@ -1,4 +1,4 @@
-# 🔍 PerfSeer: An Efficient and Accurate Deep Learning Models Performance Predictor.
+# PerfSeer: An Efficient and Accurate Deep Learning Models Performance Predictor.
 ## 🌟 1. Overview
 PerfSeer enables efficient and accurate prediction of various performance metrics for DL models during both training and inference.
 
